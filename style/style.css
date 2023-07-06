@@ -1,0 +1,19 @@
+.guide{
+    opacity: 80%;
+    cursor: pointer;
+    background-color: aqua;
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+}
+
+.guideContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body{
+    background-image: url("../assist/img/CCEP_Stripes.png");
+}

@@ -1,0 +1,139 @@
+.PageTop{
+    width: 100%;
+    height: 15%;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    background-color: #D0D9D3;
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 7px;
+}
+
+.MainPage{
+    /* opacity: 30%; */
+
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+body{
+    background-color: #F2EFE8;
+}
+
+.guide{
+    opacity: 80%;
+    cursor: pointer;
+    background-color: #D9D5DF;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    margin: 1%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #182825;
+    line-height: 60px;
+}
+
+.guideContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact{
+    background-color: #737373;
+    width: 100%;
+    height: 15%;
+    font-weight: bold;
+    color: #182825;
+    line-height: 60px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.guideContainerOuter{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.DataPage{
+    opacity: 90%;
+    position: absolute;
+    width: 60%;
+    height: 90%;
+    display: flex;
+    border-radius: 10px;
+    top: 13%;
+    left: 13.5%;
+
+    display: none;
+}
+
+.DataPageContent{
+    background-color: #737373;
+    width: 80%;
+    height: 85%;
+    margin-left: 2%;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.DataPageGuide{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.DataPageTitle{
+    width: 100%;
+    height: 15%;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #182825;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.GuideTitle{
+    cursor: pointer;
+    margin-top: 25%;
+    border: 3px solid #182825;
+    border-radius: 5px;
+}
+
+.DataPageText{
+    width: 100%;
+    height: 80%;
+    font-size: 40px;
+    font-weight: bold;
+    overflow-y: scroll;
+}
+
+.DataPageX{
+    top: 1%;
+    right: 0.5%;
+    z-index: 10;
+    cursor: pointer;
+    position: absolute;
+}
+
+.DataPageText::-webkit-scrollbar {
+    width: 3px;
+    background-color: wheat;
+}
+  
+.DataPageText::-webkit-scrollbar-thumb {
+    width: 3px;
+    background-color: gray;
+}
