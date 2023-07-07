@@ -121,8 +121,18 @@ function pushText(Data)
 function ExpandDetails(index, Data)
 {
     $(".DataPageText p").eq(index).on('click', () => {
+        $(".OPEN p").remove();
+        $(".DataPageText p").each(function(i) {
+            console.log(index);
+            if(i !== index){
+                let updatedText = $(this).html().replace("▼", "►");
+                $(this).html(updatedText);
+                $(this).removeClass("OPEN");
+            }
+          });
+        
         for(let j = 1; j < Data[index + 1].length; j++)
-            PushExpandDetails($(".DataPageText p").eq(index), Data[index + 1][j]);
+            PushExpandDetails($(".DataPageText p").eq(index), Data[index + 1][j], index);
 
         if($(".DataPageText p").eq(index).hasClass("OPEN")){
             let updatedText = $(".DataPageText p").eq(index).html().replace("▼", "►");
@@ -137,12 +147,13 @@ function ExpandDetails(index, Data)
     })
 }
 
-function PushExpandDetails(WHO, WHAT)
+function PushExpandDetails(WHO, WHAT, index)
 {
     if(WHO.hasClass("OPEN")){
         $(".OPEN p").remove();
     }
     else{
+        console.log(WHO);
         if($.isArray(WHAT))
         {
             if(WHAT[2] === "url")
