@@ -1,4 +1,6 @@
 *{
+    font-family: 'Noto Serif TC', serif;
+
     /* border: 1px solid red; */
     box-sizing: border-box;
     margin: 0px;
@@ -6,6 +8,10 @@
     user-select: none;
     -webkit-user-drag: none;
     position: relative;
+}
+
+a{
+    text-decoration: none;
 }
 
 body, html{
