@@ -45,7 +45,7 @@ body{
     justify-content: center;
 }
 
-.contact{
+.ContactContainer{
     background-color: #737373;
     width: 100%;
     height: 15%;
@@ -54,6 +54,18 @@ body{
     line-height: 60px;
     font-size: 25px;
     text-align: center;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    font-size: 20px;
+}
+
+.contact>div{
+    margin-right: 2%;
 }
 
 .guideContainerOuter{
@@ -130,7 +142,7 @@ body{
 
 .DataPageText{
     top: 5%;
-    width: 100%;
+    /* width: 100%; */
     text-align-last: left;
 }
 

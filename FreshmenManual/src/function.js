@@ -2,6 +2,8 @@ export{IncludeData}
 
 function IncludeData(WHO)
 {
+    $(".MainPage").css("opacity", "30%");
+
     fetch("FreshmenInformation.json")
         .then(function(response) 
         {
@@ -113,28 +115,36 @@ function PushContent(data)
 
 function pushText(Data)
 {
+    let paragraph = "<p>";
+
     for(let i = 1; i < Data.length; i++)
     {
         if(Data[i][2] === "url")
-            $(".DataPageText").append('<p><a href="' + Data[i][1] + '">' + Data[i][0]+ '</a></p>');
+            paragraph += ('<span><a href="' + Data[i][1] + '">' + Data[i][0]+ '</a></span>');
         else if(Data[i][1] === "img")
-            $(".DataPageText").append('<p><img src="' + Data[i][0] + '"></p>');
-        else if($.isArray(Data[i])){
-            $(".DataPageText").append("<p>" + Data[i][0] + "</p>"); 
+            paragraph += ('<span><img src="' + Data[i][0] + '"></span>');
+        else if($.isArray(Data[i]))
+            paragraph += ("<span>" + Data[i][0] + "</span>"); 
+        else
+            paragraph += ("<span>" + (Data[i]) + "</span>");
+    }
 
+    $(".DataPageText").append(paragraph + "</p>");
+
+
+    for(let i = 1; i < Data.length; i++)
+    {
+        if($.isArray(Data[i])  && Data[i][2] !== "url" && Data[i][1] !== "img" ){
             ExpandDetails(i - 1, Data);
         }
-        else
-            $(".DataPageText").append("<p>" + Data[i] + "</p>");
     }
 }
 
 function ExpandDetails(index, Data)
 {
-    $(".DataPageText p").eq(index).on('click', () => {
+    $(".DataPageText p span").eq(index).on('click', () => {
         $(".OPEN p").remove();
-        $(".DataPageText p").each(function(i) {
-            console.log(index);
+        $(".DataPageText p span").each(function(i) {
             if(i !== index){
                 let updatedText = $(this).html().replace("▼", "►");
                 $(this).html(updatedText);
@@ -142,18 +152,23 @@ function ExpandDetails(index, Data)
             }
           });
         
-        for(let j = 1; j < Data[index + 1].length; j++)
-            PushExpandDetails($(".DataPageText p").eq(index), Data[index + 1][j], index);
+        let paragraph = "<p>";
 
-        if($(".DataPageText p").eq(index).hasClass("OPEN")){
-            let updatedText = $(".DataPageText p").eq(index).html().replace("▼", "►");
-            $(".DataPageText p").eq(index).html(updatedText);
-            $(".DataPageText p").eq(index).removeClass("OPEN");
+        for(let j = 1; j < Data[index + 1].length; j++)
+            paragraph += PushExpandDetails($(".DataPageText p span").eq(index), Data[index + 1][j], index);
+
+        paragraph += "</p>"
+        $(".DataPageText p span").eq(index).append(paragraph);
+
+        if($(".DataPageText p span").eq(index).hasClass("OPEN")){
+            let updatedText = $(".DataPageText p span").eq(index).html().replace("▼", "►");
+            $(".DataPageText p span").eq(index).html(updatedText);
+            $(".DataPageText p span").eq(index).removeClass("OPEN");
         }
         else{
-            let updatedText = $(".DataPageText p").eq(index).html().replace("►", "▼");
-            $(".DataPageText p").eq(index).html(updatedText);
-            $(".DataPageText p").eq(index).addClass("OPEN");
+            let updatedText = $(".DataPageText p span").eq(index).html().replace("►", "▼");
+            $(".DataPageText p span").eq(index).html(updatedText);
+            $(".DataPageText p span").eq(index).addClass("OPEN");
         }
     })
 }
@@ -162,17 +177,21 @@ function PushExpandDetails(WHO, WHAT, index)
 {
     if(WHO.hasClass("OPEN")){
         $(".OPEN p").remove();
+        return "";
     }
     else{
+        let paragraph = "";
         if($.isArray(WHAT))
         {
             if(WHAT[2] === "url")
-                WHO.append('<p><a href="' + WHAT[1] + '">' + WHAT[0]+ '</a></p>');
+                paragraph += ('<span><a href="' + WHAT[1] + '">' + WHAT[0]+ '</a></span>');
             else if(WHAT[1] === "img")
-                WHO.append('<p><img src="' + WHAT[0] + '"></p>');
+                paragraph += ('<span><img src="' + WHAT[0] + '"></span>');
         }
         else
-            WHO.append("<p>" + WHAT + "</p>");
+            paragraph += ("<span>" + WHAT + "</span>");
+
+        return paragraph;
     }
 }
 
