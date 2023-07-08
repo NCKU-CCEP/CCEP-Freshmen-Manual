@@ -111,7 +111,7 @@
                 ["新生體檢說明<br>", "https://health-epsh.ncku.edu.tw/p/403-1097-2117-1.php?Lang=zh-tw", "url"],
                 ["8/30(三)~9/1(五)"],
                 ["成功登大人—新鮮人成長營<br>", "https://military-osa.ncku.edu.tw/p/412-1055-20794.php?Lang=zh-tw", "url"], 
-                "9/2 前寄紙本新生基本資料表至註冊組<br>", 
+                "9/2 前寄紙本新生基本資料表至註冊組", 
                 "(需檢附高中畢業證書影本及身分證正反面影本)<br>",
                 "9/5 開學日&學費繳交期限 ", 
                 ["臺灣銀行 學雜費入口網<br>", "https://school.bot.com.tw/newTwbank/StudentLogin.aspx", "url"],
@@ -323,7 +323,7 @@
                     ],
                     [
                         "► 選課方式<br>"
-                        , "1. 進到", ["選課系統", "https://course.ncku.edu.tw/", "url"] ,"後「登入」，點選「課程查詢」。<br>通識類課程包含國文、英文、踏溯台南及其他通識領域課程<br>體育課（大一上統一上課，不用選，大一下開始才需要）"
+                        , "1. 進到", ["選課系統", "https://course.ncku.edu.tw/", "url"] ,"後「登入」，點選「課程查詢」。<br>- 通識類課程包含國文、英文、踏溯台南及其他通識領域課程<br>- 體育課（大一上統一上課，不用選，大一下開始才需要）"
                         , ["/assest/img/CourseSelection-1.png", "img"]
                         , "2. 選課方式有兩種（會導致一樣的結果）①單科加選（記下系號和序號輸入系統）②預排選課"
                         , ["/assest/img/CourseSelection-2.png", "img"]
