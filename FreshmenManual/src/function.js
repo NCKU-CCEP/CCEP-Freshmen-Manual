@@ -9,10 +9,14 @@ function IncludeData(WHO)
         })
         .then(function(data) 
         {
+            let nowPosition = -1;
+
             for (let key in data) 
             {
                 if (key.includes(WHO)) 
                 {
+                    nowPosition = 0;
+
                     if(data[key].init[0] === "GuideOpen")
                     {
                         PushGuide(data[key]);
@@ -23,6 +27,9 @@ function IncludeData(WHO)
                     }
 
                     PushContent(data[key]);
+
+                    AddClass(nowPosition, data[key]);
+                    
                     if(data[key].init[0] === "GuideOpen"){
                         $(".GuideTitle").on('click', (event) => {
                             $(".DataPageText").html("");
@@ -31,11 +38,12 @@ function IncludeData(WHO)
                             if($(".GuideTitle").eq(index).hasClass("GuideTitleClick"))
                             {
                                 $(".GuideTitle").eq(index).removeClass("GuideTitleClick");
+       
+                                pushText(data[key].init);
 
-                                for(let i = 1; i < data[key].init.length; i++)
-                                {
-                                    $(".DataPageText").append(data[key].init[i]);
-                                }
+                                $(".DataPageTextContainer").removeClass(data[key].DataClass[nowPosition]);
+                                nowPosition = 0;
+                                AddClass(nowPosition, data[key]);
                             }
                             else
                             {
@@ -48,6 +56,10 @@ function IncludeData(WHO)
                                 $(".GuideTitle").eq(index).addClass("GuideTitleClick");
 
                                 pushText(data[key].include[index]);
+
+                                $(".DataPageTextContainer").removeClass(data[key].DataClass[nowPosition]);
+                                nowPosition = index + 1;
+                                AddClass(nowPosition, data[key]);
                             }    
                         })
                     }
@@ -58,10 +70,9 @@ function IncludeData(WHO)
                         $(".DataPage").css("display", "none");
                         $(".MainPage").css("opacity", "100%");
                     })
-
                     break;
                 }
-              }
+            }
             return data
         })
 }
@@ -153,7 +164,6 @@ function PushExpandDetails(WHO, WHAT, index)
         $(".OPEN p").remove();
     }
     else{
-        console.log(WHO);
         if($.isArray(WHAT))
         {
             if(WHAT[2] === "url")
@@ -164,4 +174,13 @@ function PushExpandDetails(WHO, WHAT, index)
         else
             WHO.append("<p>" + WHAT + "</p>");
     }
+}
+
+function AddClass(nowPosition, Data)
+{
+    if(Data.DataClass){
+        $(".DataPageTextContainer").addClass(Data.DataClass[nowPosition]);
+    }
+    else
+        return;
 }

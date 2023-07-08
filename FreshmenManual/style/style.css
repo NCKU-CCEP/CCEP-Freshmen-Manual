@@ -65,12 +65,12 @@ body{
 .DataPage{
     opacity: 90%;
     position: absolute;
-    width: 60%;
+    width: 80%;
     height: 90%;
     display: flex;
     border-radius: 10px;
     top: 13%;
-    left: 13.5%;
+    left: 1%;
     justify-content: end;
     display: none;
 }
@@ -79,7 +79,7 @@ body{
     background-color: #737373;
     width: 80%;
     height: 85%;
-    margin-left: 2%;
+    left: 2%;
     border-radius: 10px;
     padding: 2%;
 }
@@ -129,10 +129,9 @@ body{
 }
 
 .DataPageText{
-    margin-top: 5%;
+    top: 5%;
     width: 100%;
     text-align-last: left;
-    margin-left: 2%;
 }
 
 .DataPageX{
