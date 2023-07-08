@@ -143,6 +143,7 @@ body{
 .DataPageText{
     top: 5%;
     /* width: 100%; */
+    height: fit-content;
     text-align-last: left;
 }
 
@@ -164,7 +165,7 @@ body{
     background-color: gray;
 }
 
-p{
+span{
     cursor: pointer;
     width: fit-content;
 }

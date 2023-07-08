@@ -158,7 +158,9 @@ function ExpandDetails(index, Data)
             paragraph += PushExpandDetails($(".DataPageText p span").eq(index), Data[index + 1][j], index);
 
         paragraph += "</p>"
-        $(".DataPageText p span").eq(index).append(paragraph);
+
+        if(paragraph !== "<p></p>")
+            $(".DataPageText p span").eq(index).append(paragraph);
 
         if($(".DataPageText p span").eq(index).hasClass("OPEN")){
             let updatedText = $(".DataPageText p span").eq(index).html().replace("▼", "►");

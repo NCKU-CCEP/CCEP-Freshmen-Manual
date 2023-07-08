@@ -10,11 +10,16 @@
     position: relative;
 }
 
-p
+span
 {
     margin-bottom: 30px;
     margin-top: 0px;
     width: fit-content;
+}
+
+p
+{
+    line-height: 80px;
 }
 
 a{
