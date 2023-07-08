@@ -12,9 +12,10 @@
 
 span
 {
-    margin-bottom: 30px;
-    margin-top: 0px;
-    width: fit-content;
+    /* margin-bottom: 30px;
+    margin-top: 0px; */
+    width: 50%;
+    height: fit-content;
 }
 
 p
