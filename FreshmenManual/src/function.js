@@ -36,6 +36,9 @@ function IncludeData(WHO)
                         $(".GuideTitle").eq(0).addClass("GuideTitleClick");
 
                         $(".GuideTitle").on('click', (event) => {
+                            $(".DataPageContent").animate({
+                                scrollTop: 0
+                              }, 100); 
                             $(".DataPageText").html("");
                             let index = $(".GuideTitle").index(event.target);
                             
@@ -168,6 +171,10 @@ function ExpandDetails(index, Data)
             $(".DataPageText p span").eq(index).html(updatedText);
             $(".DataPageText p span").eq(index).addClass("OPEN");
         }
+
+        $(".DataPageContent").animate({
+            scrollTop: 0
+          }, 100); 
     })
 }
 
