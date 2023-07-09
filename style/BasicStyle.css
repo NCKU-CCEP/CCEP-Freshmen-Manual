@@ -26,6 +26,11 @@ p
 
 a{
     text-decoration: none;
+    color: brown;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 body, html{

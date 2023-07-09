@@ -56,7 +56,7 @@ function IncludeData(WHO)
                                 pushText(data[key].include[index - 1]);
 
                             $(".DataPageTextContainer").removeClass(data[key].DataClass[nowPosition]);
-                            nowPosition = index + 1;
+                            nowPosition = index;
                             AddClass(nowPosition, data[key]);
                               
                         })
