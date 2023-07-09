@@ -33,36 +33,29 @@ function IncludeData(WHO)
                     AddClass(nowPosition, data[key]);
                     
                     if(data[key].init[0] === "GuideOpen"){
+                        $(".GuideTitle").eq(0).addClass("GuideTitleClick");
+
                         $(".GuideTitle").on('click', (event) => {
                             $(".DataPageText").html("");
                             let index = $(".GuideTitle").index(event.target);
-
-                            if($(".GuideTitle").eq(index).hasClass("GuideTitleClick"))
+                            
+                            for(let i = 0; i < $(".GuideTitle").length; i++)
                             {
-                                $(".GuideTitle").eq(index).removeClass("GuideTitleClick");
-       
-                                pushText(data[key].init);
-
-                                $(".DataPageTextContainer").removeClass(data[key].DataClass[nowPosition]);
-                                nowPosition = 0;
-                                AddClass(nowPosition, data[key]);
+                                if($(".GuideTitle").eq(i).hasClass("GuideTitleClick"))
+                                    $(".GuideTitle").eq(i).removeClass("GuideTitleClick");
                             }
+
+                            $(".GuideTitle").eq(index).addClass("GuideTitleClick");
+
+                            if(index === 0)
+                                pushText(data[key].init);
                             else
-                            {
-                                for(let i = 0; i < $(".GuideTitle").length; i++)
-                                {
-                                    if($(".GuideTitle").eq(i).hasClass("GuideTitleClick"))
-                                        $(".GuideTitle").eq(i).removeClass("GuideTitleClick");
-                                }
+                                pushText(data[key].include[index - 1]);
 
-                                $(".GuideTitle").eq(index).addClass("GuideTitleClick");
-
-                                pushText(data[key].include[index]);
-
-                                $(".DataPageTextContainer").removeClass(data[key].DataClass[nowPosition]);
-                                nowPosition = index + 1;
-                                AddClass(nowPosition, data[key]);
-                            }    
+                            $(".DataPageTextContainer").removeClass(data[key].DataClass[nowPosition]);
+                            nowPosition = index + 1;
+                            AddClass(nowPosition, data[key]);
+                              
                         })
                     }
 
@@ -86,6 +79,9 @@ function PushGuide(data)
     </div>`
 
     $(".DataPage").append(Guide);
+
+    if(data.init[0] === "GuideOpen")
+        $(".DataPageGuide").append(`<div class="GuideTitle OPEN">首頁</div>`);
 
     for(let i = 0; i < data.include.length; i++)
     {
