@@ -108,6 +108,9 @@ body{
     font-size: 20px;
     padding: 4px;
     font-weight: bold;
+    overflow-y: scroll;
+    justify-content: space-evenly;
+    bottom: 8%;
 }
 
 .DataPageTitle{
@@ -124,8 +127,6 @@ body{
     cursor: pointer;
     margin-bottom: 20px;
     padding: 2px;
-    border: 3px solid #182825;
-    border-radius: 5px;
 }
 
 .GuideTitleClick{
@@ -165,6 +166,16 @@ body{
 .DataPageContent::-webkit-scrollbar-thumb {
     width: 10px;
     background-color: gray;
+}
+
+.DataPageGuide::-webkit-scrollbar {
+    width: 3px;
+    background-color: none;
+}
+
+.DataPageGuide::-webkit-scrollbar-thumb {
+    width: 3px;
+    background-color: none;
 }
 
 span{
