@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    -webkit-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
     position: relative;
@@ -20,7 +21,7 @@ span
 
 p
 {
-    line-height: 80px;
+    line-height: 60px;
 }
 
 a{
@@ -30,7 +31,7 @@ a{
 body, html{
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-size: 100% 100%;
 }
 
