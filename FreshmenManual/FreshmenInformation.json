@@ -17,7 +17,7 @@
             [
                 "► 迎新桌遊茶會 8/29 （二）13：30 ~ 17：00<br>", 
                     "在開學之前，讓各位新生有個交流的機會。<br>除了能夠趁此先跟未來一年的同學聊聊之外，也可以趁著個時間跟系上學長姐混熟，聊聊關於接下來大學四年的想法與想做的事情，有什麼想知道的就來這裡聊聊吧！", 
-                    ["/assest/img/WelcomeBoardGameTeaParty.png", "img"]
+                    ["../../assest/img/WelcomeBoardGameTeaParty.png", "img"]
             ], 
 
             [
@@ -44,21 +44,21 @@
                     "不分系作為因應現今時代所誕生的科系不再依靠傳統文憑證明自己取而代之的是「問題導向式專題」如此看似有高度自主性的專題總是使人有著實踐自我理想的希望感卻同時也得面對著「滾動式修正」的未知感與背負著所謂的「社會責任」在這個「體制內的體制外」場域我們如何建構出理想與現實間的橋樑？", 
                     "<br><<因此，不分系自聊會誕生了。>><br>", 
                     "在這裡，我們能夠交流彼此對於不分系的各種想法描繪出自我對於不分系的想像建構出實踐可能性與限制轉換碰撞出不同故事脈絡間的火花以及...任何你想聊的。<br>", "歡迎正在專題苦海的夥伴們 ( 尤其是剛剛報告完月報告的 )、想探討不分系的同學們、猶豫要不要進入不分系的人們、或是還在思考自己到底要做什麼的朋友們 來到「不存在劇場」，共同詮釋「不分系精神」。", 
-                    ["/assest/img/Chat-1.png", "img"]
+                    ["../../assest/img/Chat-1.png", "img"]
             ], 
 
             [
             "► 各式講座與工作坊 （不定期舉辦）<br>", 
                 "不分系學會根據當屆同學的需求舉辦各種不同類型的講座與工作坊，讓不分系同學能夠藉此認識各行各業與對於生涯規劃有進一步的認知。( 以下為過往舉辦的活動 )", 
-                ["/assest/img/activity-1.png", "img"], 
-                ["/assest/img/activity-2.png", "img"], 
-                ["/assest/img/activity-3.png", "img"]
+                ["../../assest/img/activity-1.png", "img"], 
+                ["../../assest/img/activity-2.png", "img"], 
+                ["../../assest/img/activity-3.png", "img"]
             ], 
 
             [
                 "► 成大單車節擺攤活動<br>", 
                     "單車節為南部最大的科系博覽會，不分系學會在此時會招募熱血的大一與當天前往成大參加的高中生與家長們交流，讓不分系的精神被更多莘莘學子所知，成為成大不分系的一員。", 
-                    ["/assest/img/CyclingFestival.png", "img"]
+                    ["../../assest/img/CyclingFestival.png", "img"]
             ]
         ], 
         [
@@ -215,21 +215,21 @@
                         , "● 共有五個領域：人文學、社會科學、自然與工程科學、生命科學與健康、科技整合<br>"
                         , "● 至少修習三個領域<br>"
                         , "● 通識中心開的第二外語不得當作通識學分，除非你有「轉通識」。"
-                        , ["/assest/img/GeneralKnowledge.png", "img"], "<br><br>"
+                        , ["../../assest/img/GeneralKnowledge.png", "img"], "<br><br>"
                         , "✎融合通識(至少1學分,至多15學分):<br>"
                         , "● 含「通識領袖論壇」、「臺灣綜合大學通識巡迴講座」、「通識專題講座」、「通識總整課程」、「通識教育生活實踐」(至多修習6學分)<br>"
                         , "● 通識領袖論壇"
-                        , ["/assest/img/GeneralKnowledge-1.png", "img"]
+                        , ["../../assest/img/GeneralKnowledge-1.png", "img"]
                         , "● 臺灣綜合大學通識巡迴講座"
-                        , ["/assest/img/GeneralKnowledge-2.png", "img"]
+                        , ["../../assest/img/GeneralKnowledge-2.png", "img"]
                         , "● 通識專題講座"
-                        , ["/assest/img/GeneralKnowledge-3.png", "img"]
+                        , ["../../assest/img/GeneralKnowledge-3.png", "img"]
                         , "● 通識總整課程"
-                        , ["/assest/img/GeneralKnowledge-4.png", "img"]
+                        , ["../../assest/img/GeneralKnowledge-4.png", "img"]
                         ,"● "
                         , ["通識教育生活實踐", "http://sys.cge.ncku.edu.tw/syscge/", "url"]
                         , "(涵蓋項目很多，有興趣請登入網站後自行研究)"
-                        , ["/assest/img/GeneralKnowledge-5.png", "img"], "<br><br>"
+                        , ["../../assest/img/GeneralKnowledge-5.png", "img"], "<br><br>"
                         , "✎體育(0學分,至少四堂):<br>"
                         , "● 體育0學分，但是為一、二年級必修科目，不及格不得畢業。<br>"
                         , "● 大一下記得要選名稱有「健康體能」的，會測3000公尺<br><br>"
@@ -296,12 +296,12 @@
                         , "● 導師討論表現 25%<br>"
                         , "此部分分數由本學期的專題導師全權負責給分<br>"
                         , "由於每位不分系老師帶專題的方式不盡相同，同學們在確認學期的專題導師後，會跟你的專題導師聯繫，討論固定討論時間與 25% 分數的評分方式。"
-                        , ["/assest/img/TopicScoreRatio-1.png", "img"], "<br><br>"
+                        , ["../../assest/img/TopicScoreRatio-1.png", "img"], "<br><br>"
                         , "● 月報告 15%<br>"
                         , "1. 以出席率計分，共3次，每次 5%，所有修專題同學需全程參與<br>"
                         , "2. 月報告當天還是會請進行評分，但不會計入 15% 的分數，評分是給各位同學修正的參考<br>"
                         , "● 期末專題報告 50%"
-                        , ["/assest/img/TopicScoreRatio-2.png", "img"]
+                        , ["../../assest/img/TopicScoreRatio-2.png", "img"]
                     ]
                 ],
                 [
@@ -326,15 +326,15 @@
                     [
                         "► 選課方式<br>"
                         , "1. 進到", ["選課系統", "https://course.ncku.edu.tw/", "url"] ,"後「登入」，點選「課程查詢」。<br>- 通識類課程包含國文、英文、踏溯台南及其他通識領域課程<br>- 體育課（大一上統一上課，不用選，大一下開始才需要）"
-                        , ["/assest/img/CourseSelection-1.png", "img"]
+                        , ["../../assest/img/CourseSelection-1.png", "img"]
                         , "2. 選課方式有兩種（會導致一樣的結果）①單科加選（記下系號和序號輸入系統）②預排選課"
-                        , ["/assest/img/CourseSelection-2.png", "img"]
+                        , ["../../assest/img/CourseSelection-2.png", "img"]
                         , "3. 預排選課要按下+選課才有選到課"
-                        , ["/assest/img/CourseSelection-3.png", "img"]
+                        , ["../../assest/img/CourseSelection-3.png", "img"]
                         , "4. 可調整志願序（點選登記清單與志願序調整）"
-                        , ["/assest/img/CourseSelection-4.png", "img"]
+                        , ["../../assest/img/CourseSelection-4.png", "img"]
                         , "5. 依照圖示查詢條件可得外文系所有的課程，可以視情況選修，語言學類可能較不建議，需要語言學概論的基礎，文學類課程較無此限制，英國文學、美國文學（一）～（四）為時代不同，並無難度上差別，也沒有擋修。"
-                        , ["/assest/img/CourseSelection-5.png", "img"]
+                        , ["../../assest/img/CourseSelection-5.png", "img"]
                     ],
                     [
                         "► 踏溯台南<br>"
@@ -462,7 +462,7 @@
                 "繳交方式（轉帳或郵局存款單）：轉帳部分經ATM或網路皆可（要記得備註姓名），郵局存款單已附在新生包內。已經幫大家完成基礎資料的填寫，其中打勾部分一定要填歐！<br>",
                 "① 系學會費：新臺幣 2500 元整 ( 9/5 開學後 )<br>",
                 "② 系學會郵局帳號：國立成功大學不分系系學會  洪睿彬 700(郵局) 0031071-0844084",
-                ["/assest/img/FAQ-1.png", "img"]
+                ["../../assest/img/FAQ-1.png", "img"]
             ]
         ]
     }
