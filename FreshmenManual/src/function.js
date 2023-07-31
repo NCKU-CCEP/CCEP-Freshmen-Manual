@@ -1,4 +1,4 @@
-export{IncludeData}
+export{IncludeData, setClick}
 
 function IncludeData(WHO)
 {
@@ -67,6 +67,8 @@ function IncludeData(WHO)
                         $(".DataPageContent").remove();
                         $(".DataPage").css("display", "none");
                         $(".MainPage").css("opacity", "100%");
+                        clearClick();
+                        setClick();
                     })
                     break;
                 }
@@ -207,4 +209,47 @@ function AddClass(nowPosition, Data)
     }
     else
         return;
+}
+
+function setClick()
+{
+    $(".DepartmentSocietyResources").on('click', () => {
+        IncludeData("DepartmentSocietyResources");
+        $(".DataPage").css("display", "flex");
+        clearClick();
+    })
+
+    $(".InstructionsForNewStudents").on('click', () => {
+        IncludeData("InstructionsForNewStudents");
+        $(".DataPage").css("display", "flex");
+        clearClick();
+    })
+
+    $(".AccommodationInformation").on('click', () => {
+        IncludeData("AccommodationInformation");
+        $(".DataPage").css("display", "flex");
+        clearClick();
+    })
+
+    $(".CourseDescription").on('click', () => {
+        IncludeData("CourseDescription");
+        $(".DataPage").css("display", "flex");
+        clearClick();
+    })
+    
+    $(".OnlineResources").on('click', () => {
+        IncludeData("OnlineResources");
+        $(".DataPage").css("display", "flex");
+        clearClick();
+    })
+
+    $(".FAQ").on('click', () => {
+        IncludeData("FAQ");
+        $(".DataPage").css("display", "flex");
+        clearClick();
+    })
+}
+
+function clearClick(){
+    $(".FAQ, .OnlineResources, .CourseDescription, .AccommodationInformation, .InstructionsForNewStudents, .DepartmentSocietyResources").off();
 }
