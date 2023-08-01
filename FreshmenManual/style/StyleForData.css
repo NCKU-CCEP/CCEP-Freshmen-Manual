@@ -1,3 +1,7 @@
 .LEFT .DataPageText p{
     text-align: start;
 }
+
+.Group .DataPageText p img{
+    width: 60%;
+}
