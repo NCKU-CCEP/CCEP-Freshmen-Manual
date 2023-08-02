@@ -196,7 +196,7 @@ span{
     text-align: center;
 }
 
-.DataPageText p img{
+.DataPageText>p img{
     width: 100%;
 }
 

@@ -9,3 +9,7 @@
 .LEFT>.DataPageText>p>span:nth-child(13){
     color: brown;
 }
+
+.Group .DataPageText p img{
+    width: 60%;
+}
