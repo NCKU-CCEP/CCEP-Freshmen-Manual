@@ -205,10 +205,34 @@ span{
 }
 
 .DepartmentSocietyResources{
-    /* background-image: url("...");
+    background-image: url("../../assest/img/Entrance-StuAssociation.png");
     background-size: 100% 100%;
-
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;*/
+}
+
+.InstructionsForNewStudents{
+    background-image: url("../../assest/img/Entrance-FreshmanInfo.png");
+    background-size: 110% 100%;
+}
+
+.AccommodationInformation{
+    background-image: url("../../assest/img/Entrance-AccommodationInfo.png");
+    background-size: 100% 100%;
+}
+
+.CourseDescription{
+    background-image: url("../../assest/img/Entrance-CourseInfo.png");
+    background-size: 100% 100%;
+}
+
+.OnlineResources{
+    background-image: url("../../assest/img/Entrance-OnlineInfo.png");
+    background-size: 100% 100%;
+}
+
+.FAQ{
+    background-image: url("../../assest/img/Entrance-FAQ.png");
+    background-size: 100% 100%;
 }
