@@ -1,3 +1,11 @@
 .LEFT .DataPageText p{
     text-align: start;
 }
+
+.LEFT>.DataPageText>p>span:nth-child(1),
+.LEFT>.DataPageText>p>span:nth-child(4),
+.LEFT>.DataPageText>p>span:nth-child(7),
+.LEFT>.DataPageText>p>span:nth-child(10),
+.LEFT>.DataPageText>p>span:nth-child(13){
+    color: brown;
+}
