@@ -38,7 +38,7 @@ function IncludeData(WHO)
                         $(".GuideTitle").on('click', (event) => {
                             $(".DataPageContent").animate({
                                 scrollTop: 0
-                              }, 100); 
+                            }, 100); 
                             $(".DataPageText").html("");
                             let index = $(".GuideTitle").index(event.target);
                             
@@ -58,7 +58,7 @@ function IncludeData(WHO)
                             $(".DataPageTextContainer").removeClass(data[key].DataClass[nowPosition]);
                             nowPosition = index;
                             AddClass(nowPosition, data[key]);
-                              
+                            
                         })
                     }
 
@@ -151,7 +151,7 @@ function ExpandDetails(index, Data)
                 $(this).html(updatedText);
                 $(this).removeClass("OPEN");
             }
-          });
+        });
         
         let paragraph = "<p>";
 
@@ -213,8 +213,8 @@ function AddClass(nowPosition, Data)
 
 function setClick()
 {
-    $(".DepartmentSocietyResources").on('click', () => {
-        IncludeData("DepartmentSocietyResources");
+    $(".StudentAssociationResources").on('click', () => {
+        IncludeData("StudentAssociationResources");
         $(".DataPage").css("display", "flex");
         clearClick();
     })
@@ -251,5 +251,5 @@ function setClick()
 }
 
 function clearClick(){
-    $(".FAQ, .OnlineResources, .CourseDescription, .AccommodationInformation, .InstructionsForNewStudents, .DepartmentSocietyResources").off();
+    $(".FAQ, .OnlineResources, .CourseDescription, .AccommodationInformation, .InstructionsForNewStudents, .StudentAssociationResources").off();
 }
