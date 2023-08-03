@@ -86,7 +86,7 @@ function PushGuide(data)
     $(".DataPage").append(Guide);
 
     if(data.init[0] === "GuideOpen")
-        $(".DataPageGuide").append(`<div class="GuideTitle OPEN">首頁</div>`);
+        $(".DataPageGuide").append(`<div class="GuideTitle OPEN">📖 首頁</div>`);
 
     for(let i = 0; i < data.include.length; i++)
     {

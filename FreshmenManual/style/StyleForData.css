@@ -20,24 +20,32 @@
 }
 
 .AccommodationSchedule>.DataPageText>p>span:nth-child(1),
-.AccommodationSchedule>.DataPageText>p>span:nth-child(5),
-.AccommodationSchedule>.DataPageText>p>span:nth-child(7),
-.AccommodationSchedule>.DataPageText>p>span:nth-child(9){
+.AccommodationSchedule>.DataPageText>p>span:nth-child(4),
+.AccommodationSchedule>.DataPageText>p>span:nth-child(6),
+.AccommodationSchedule>.DataPageText>p>span:nth-child(8){
     color: brown;
 }
 
-.Courses>.DataPageText>p>span:nth-child(3)>p>span:nth-child(1),
-.Courses>.DataPageText>p>span:nth-child(3)>p>span:nth-child(4),
-.Courses>.DataPageText>p>span:nth-child(3)>p>span:nth-child(6),
-.Courses>.DataPageText>p>span:nth-child(3)>p>span:nth-child(13),
-.Courses>.DataPageText>p>span:nth-child(3)>p>span:nth-child(28),
-.Courses>.DataPageText>p>span:nth-child(3)>p>span:nth-child(31),
-.Courses>.DataPageText>p>span:nth-child(4)>p>span:nth-child(1),
-.Courses>.DataPageText>p>span:nth-child(4)>p>span:nth-child(7),
-.Courses>.DataPageText>p>span:nth-child(4)>p>span:nth-child(11),
-.Courses>.DataPageText>p>span:nth-child(4)>p>span:nth-child(13),
-.Courses>.DataPageText>p>span:nth-child(4)>p>span:nth-child(23),
-.Courses>.DataPageText>p>span:nth-child(4)>p>span:nth-child(25){
+.AccommodationInfo>.DataPageText>p>span:nth-child(3),
+.AccommodationInfo>.DataPageText>p>span:nth-child(4),
+.AccommodationInfo>.DataPageText>p>span:nth-child(5),
+.AccommodationInfo>.DataPageText>p>span:nth-child(6),
+.AccommodationInfo>.DataPageText>p>span:nth-child(7){
+    padding-left: 28px;
+}
+
+.CreditStructure>.DataPageText>p>span:nth-child(2)>p>span:nth-child(1),
+.CreditStructure>.DataPageText>p>span:nth-child(2)>p>span:nth-child(4),
+.CreditStructure>.DataPageText>p>span:nth-child(2)>p>span:nth-child(6),
+.CreditStructure>.DataPageText>p>span:nth-child(2)>p>span:nth-child(13),
+.CreditStructure>.DataPageText>p>span:nth-child(2)>p>span:nth-child(28),
+.CreditStructure>.DataPageText>p>span:nth-child(2)>p>span:nth-child(31),
+.CreditStructure>.DataPageText>p>span:nth-child(3)>p>span:nth-child(1),
+.CreditStructure>.DataPageText>p>span:nth-child(3)>p>span:nth-child(7),
+.CreditStructure>.DataPageText>p>span:nth-child(3)>p>span:nth-child(11),
+.CreditStructure>.DataPageText>p>span:nth-child(3)>p>span:nth-child(13),
+.CreditStructure>.DataPageText>p>span:nth-child(3)>p>span:nth-child(23),
+.CreditStructure>.DataPageText>p>span:nth-child(3)>p>span:nth-child(25){
     color: brown;
     font-weight: bold;
 }
@@ -59,29 +67,27 @@
     color: brown;
 }
 
-.Group>.DataPageText>p>span img{
-    width: 100px;
+.Questions>.DataPageText>p>span:nth-child(1)>p>span:nth-child(2),
+.Questions>.DataPageText>p>span:nth-child(1)>p>span:nth-child(5),
+.Questions>.DataPageText>p>span:nth-child(1)>p>span:nth-child(7),
+.Questions>.DataPageText>p>span:nth-child(1)>p>span:nth-child(10),
+.Questions>.DataPageText>p>span:nth-child(3)>p>span:nth-child(1),
+.Questions>.DataPageText>p>span:nth-child(3)>p>span:nth-child(3),
+.Questions>.DataPageText>p>span:nth-child(3)>p>span:nth-child(5),
+.Questions>.DataPageText>p>span:nth-child(4)>p>span:nth-child(1),
+.Questions>.DataPageText>p>span:nth-child(6)>p>span:nth-child(2),
+.Questions>.DataPageText>p>span:nth-child(6)>p>span:nth-child(3),
+.Questions>.DataPageText>p>span:nth-child(7)>p>span:nth-child(2),
+.Questions>.DataPageText>p>span:nth-child(8)>p>span:nth-child(2),
+.Questions>.DataPageText>p>span:nth-child(8)>p>span:nth-child(4),
+.Questions>.DataPageText>p>span:nth-child(8)>p>span:nth-child(6),
+.Questions>.DataPageText>p>span:nth-child(8)>p>span:nth-child(9),
+.Questions>.DataPageText>p>span:nth-child(8)>p>span:nth-child(11),
+.Questions>.DataPageText>p>span:nth-child(8)>p>span:nth-child(13){
+    color: brown;
 }
 
-.StudentAssociation>.DataPageText>p,
-.Entertainment>.DataPageText>p,
-.Academy>.DataPageText>p,
-.ArtisticDesign>.DataPageText>p,
-.NewStudentSchedule>.DataPageText>p,
-.Necessities>.DataPageText>p,
-.AccommodationSchedule>.DataPageText>p,
-.BasicInfoLogin>.DataPageText>p,
-.CourseSchedule>.DataPageText>p,
-.Projects>.DataPageText>p,
-.Projects>.DataPageText>p>span>p,
-.CourseSelection>.DataPageText>p,
-.CourseSelection>.DataPageText>p>span>p,
-.Courses>.DataPageText>p,
-.Courses>.DataPageText>p>span>p,
-.Online>.DataPageText>p,
-.Online>.DataPageText>p>span>p,
-.Questions>.DataPageText>p,
-.Questions>.DataPageText>p>span>p
-{
-    text-align: left;
+.Group>.DataPageText>p>span img{
+    width: 80px;
+    margin: 0 15px -5px 120px;
 }

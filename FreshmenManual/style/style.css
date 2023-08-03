@@ -207,12 +207,12 @@ span{
 }
 
 .DataPageText p{
-    text-align: center;
+    text-align: left;
 }
 
 .DataPageText p span{
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .DataPageText>p img{
@@ -220,8 +220,8 @@ span{
 }
 
 .OPEN p{
-    color: #737373;
-    font-size: 17px;
+    color: #636363;
+    font-size: 18px;
     padding-left: 26px;
 }
 
