@@ -1,12 +1,14 @@
 .PageTop{
     width: 100%;
     /* height: 15%; */
-    font-size: 70px;
+    font-size: 55px;
     color: white;
     text-align: center;
-    background-color: #D0D9D3;
+    background-color: #B9CBBF;
     font-family: 'Noto Serif TC', serif;
     letter-spacing: 7px;
+    text-shadow: -1.5px 1.5px #707070;
+    padding: 5px;
 }
 
 .MainPage{
@@ -26,7 +28,7 @@ body{
 .guide{
     opacity: 80%;
     cursor: pointer;
-    background-color: #D9D5DF;
+    background-color: #E4D7E4;
     border-radius: 10px;
     height: 200px;
     width: 200px;
@@ -36,6 +38,15 @@ body{
     font-weight: bold;
     color: #182825;
     line-height: 60px;
+    box-shadow: -1px 1px 2px #707070;
+
+    /* border-left: 0 ridge #A26CA2; */
+    transition: border-left 100ms ease-in-out, border-right 100ms ease-in-out;
+}
+.guide:hover{
+    /* padding-left: 10px; */
+    border-left: 10px ridge #A26CA2;
+    box-shadow: -1px 3px 10px #707070;
 }
 
 .guideContainer{
@@ -46,12 +57,12 @@ body{
 }
 
 .ContactContainer{
-    background-color: #737373;
+    background-color: #999999;
     width: 100%;
     font-weight: bold;
     color: #182825;
-    line-height: 60px;
-    font-size: 25px;
+    line-height: 50px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -60,7 +71,7 @@ body{
     justify-content: center;
     align-items: center;
     bottom: 10px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .contact>div{
@@ -91,13 +102,14 @@ body{
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    background-color: #d0d9d3;
+    background-color: #D0D9D3;
     width: 80%;
     height: 85%;
     left: 2%;
     border-radius: 10px;
     padding: 2%;
     overflow-y: scroll;
+    box-shadow: -1px 1px 8px #707070;
 }
 
 .DataPageGuide{
@@ -131,9 +143,12 @@ body{
     padding: 2px;
     border: 2px solid #182825;
 }
+.GuideTitle:hover{
+    box-shadow: -1.3px 1.3px 4px #707070;
+}
 
 .GuideTitleClick{
-    background-color: #d0d9d3;
+    background-color: #D0D9D3;
 }
 
 .DataPageTextContainer{
@@ -160,12 +175,16 @@ body{
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
 }
+.DataPageX:hover{
+    font-size: 110%;
+    font-weight: bold;
+}
 
 .DataPageContent::-webkit-scrollbar {
     width: 10px;
     background-color: #f2efeb;
 }
-  
+
 .DataPageContent::-webkit-scrollbar-thumb {
     width: 10px;
     background-color: gray;
@@ -182,18 +201,18 @@ body{
 }
 
 span{
-    cursor: pointer;
+    /* cursor: pointer; */
     width: 50%;
     height: 10%;
 }
 
 .DataPageText p{
-    text-align: center;
+    text-align: left;
 }
 
 .DataPageText p span{
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .DataPageText>p img{
@@ -201,10 +220,12 @@ span{
 }
 
 .OPEN p{
-    color: #737373;
+    color: #636363;
+    font-size: 18px;
+    padding-left: 26px;
 }
 
-.DepartmentSocietyResources{
+.StudentAssociationResources{
     background-image: url("../../assest/img/Entrance-StuAssociation.png");
     background-size: 100% 100%;
     /*display: flex;

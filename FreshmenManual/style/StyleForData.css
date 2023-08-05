@@ -1,15 +1,93 @@
 .LEFT .DataPageText p{
     text-align: start;
 }
-
-.LEFT>.DataPageText>p>span:nth-child(1),
-.LEFT>.DataPageText>p>span:nth-child(4),
-.LEFT>.DataPageText>p>span:nth-child(7),
-.LEFT>.DataPageText>p>span:nth-child(10),
-.LEFT>.DataPageText>p>span:nth-child(13){
+.StudentAssociation>.DataPageText>p>span:nth-child(1){
     color: brown;
 }
 
-.Group .DataPageText p img{
-    width: 60%;
+.StudentAssociation>.DataPageText>p>span:nth-child(2),
+.StudentAssociation>.DataPageText>p>span:nth-child(3),
+.StudentAssociation>.DataPageText>p>span:nth-child(4),
+.StudentAssociation>.DataPageText>p>span:nth-child(5),
+.StudentAssociation>.DataPageText>p>span:nth-child(6){
+    padding-left: 26px;
+}
+
+.NewStudentSchedule>.DataPageText>p>span:nth-child(1),
+.NewStudentSchedule>.DataPageText>p>span:nth-child(5),
+.NewStudentSchedule>.DataPageText>p>span:nth-child(8){
+    color: brown;
+}
+
+.AccommodationSchedule>.DataPageText>p>span:nth-child(1),
+.AccommodationSchedule>.DataPageText>p>span:nth-child(4),
+.AccommodationSchedule>.DataPageText>p>span:nth-child(6),
+.AccommodationSchedule>.DataPageText>p>span:nth-child(8){
+    color: brown;
+}
+
+.AccommodationInfo>.DataPageText>p>span:nth-child(3),
+.AccommodationInfo>.DataPageText>p>span:nth-child(4),
+.AccommodationInfo>.DataPageText>p>span:nth-child(5),
+.AccommodationInfo>.DataPageText>p>span:nth-child(6),
+.AccommodationInfo>.DataPageText>p>span:nth-child(7){
+    padding-left: 28px;
+}
+
+.CreditStructure>.DataPageText>p>span:nth-child(2)>p>span:nth-child(1),
+.CreditStructure>.DataPageText>p>span:nth-child(2)>p>span:nth-child(4),
+.CreditStructure>.DataPageText>p>span:nth-child(2)>p>span:nth-child(6),
+.CreditStructure>.DataPageText>p>span:nth-child(2)>p>span:nth-child(13),
+.CreditStructure>.DataPageText>p>span:nth-child(2)>p>span:nth-child(28),
+.CreditStructure>.DataPageText>p>span:nth-child(2)>p>span:nth-child(31),
+.CreditStructure>.DataPageText>p>span:nth-child(3)>p>span:nth-child(1),
+.CreditStructure>.DataPageText>p>span:nth-child(3)>p>span:nth-child(7),
+.CreditStructure>.DataPageText>p>span:nth-child(3)>p>span:nth-child(11),
+.CreditStructure>.DataPageText>p>span:nth-child(3)>p>span:nth-child(13),
+.CreditStructure>.DataPageText>p>span:nth-child(3)>p>span:nth-child(23),
+.CreditStructure>.DataPageText>p>span:nth-child(3)>p>span:nth-child(25){
+    color: brown;
+    font-weight: bold;
+}
+
+.CourseSchedule>.DataPageText>p>span:nth-child(1),
+.CourseSchedule>.DataPageText>p>span:nth-child(2),
+.CourseSchedule>.DataPageText>p>span:nth-child(4),
+.CourseSchedule>.DataPageText>p>span:nth-child(6),
+.CourseSchedule>.DataPageText>p>span:nth-child(8){
+    color: brown;
+}
+
+.Projects>.DataPageText>p>span:nth-child(3)>p>span:nth-child(1),
+.Projects>.DataPageText>p>span:nth-child(3)>p>span:nth-child(3){
+    color: brown;
+}
+
+.Online>.DataPageText>p>span:nth-child(1)>p>span:nth-child(1){
+    color: brown;
+}
+
+.Questions>.DataPageText>p>span:nth-child(1)>p>span:nth-child(2),
+.Questions>.DataPageText>p>span:nth-child(1)>p>span:nth-child(5),
+.Questions>.DataPageText>p>span:nth-child(1)>p>span:nth-child(7),
+.Questions>.DataPageText>p>span:nth-child(1)>p>span:nth-child(10),
+.Questions>.DataPageText>p>span:nth-child(3)>p>span:nth-child(1),
+.Questions>.DataPageText>p>span:nth-child(3)>p>span:nth-child(3),
+.Questions>.DataPageText>p>span:nth-child(3)>p>span:nth-child(5),
+.Questions>.DataPageText>p>span:nth-child(4)>p>span:nth-child(1),
+.Questions>.DataPageText>p>span:nth-child(6)>p>span:nth-child(2),
+.Questions>.DataPageText>p>span:nth-child(6)>p>span:nth-child(3),
+.Questions>.DataPageText>p>span:nth-child(7)>p>span:nth-child(2),
+.Questions>.DataPageText>p>span:nth-child(8)>p>span:nth-child(2),
+.Questions>.DataPageText>p>span:nth-child(8)>p>span:nth-child(4),
+.Questions>.DataPageText>p>span:nth-child(8)>p>span:nth-child(6),
+.Questions>.DataPageText>p>span:nth-child(8)>p>span:nth-child(9),
+.Questions>.DataPageText>p>span:nth-child(8)>p>span:nth-child(11),
+.Questions>.DataPageText>p>span:nth-child(8)>p>span:nth-child(13){
+    color: brown;
+}
+
+.Group>.DataPageText>p>span img{
+    width: 80px;
+    margin: 0 15px -5px 120px;
 }
