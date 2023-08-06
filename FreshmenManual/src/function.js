@@ -125,7 +125,7 @@ function pushText(Data)
         else if(Data[i][1] === "img")
             paragraph += ('<span><img src="' + Data[i][0] + '"></span>');
         else if($.isArray(Data[i]))
-            paragraph += ("<span>" + Data[i][0] + "</span>"); 
+            paragraph += ("<span style='cursor: pointer;'>" + Data[i][0] + "</span>"); 
         else
             paragraph += ("<span>" + (Data[i]) + "</span>");
     }
@@ -153,7 +153,7 @@ function ExpandDetails(index, Data)
             }
         });
         
-        let paragraph = "<p>";
+        let paragraph = "<p style='cursor: auto;'>";
 
         for(let j = 1; j < Data[index + 1].length; j++)
             paragraph += PushExpandDetails($(".DataPageText p span").eq(index), Data[index + 1][j], index);
