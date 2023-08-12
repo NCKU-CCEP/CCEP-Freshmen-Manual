@@ -1,0 +1,144 @@
+@media (min-width: 768px) and (max-width: 1023px)
+{
+    /* body */
+
+    /* .MainPage */
+
+    .PageTop{
+        font-size: 55px;
+        letter-spacing: 7px;
+        text-shadow: -1.5px 1.5px #707070;
+        padding: 5px;
+    }
+
+    .guide{
+        height: 200px;
+        width: 200px;
+        margin: 1%;
+        font-size: 25px;
+        line-height: 60px;
+        box-shadow: -1px 1px 2px #707070;
+    }
+
+    .guide:hover{
+        border-left: 10px ridge #A26CA2;
+        box-shadow: -1px 3px 10px #707070;
+    }
+    
+    /* .guideContainer */
+
+    .ContactContainer{
+        line-height: 50px;
+        font-size: 20px;
+    }
+    
+    .contact{
+        bottom: 10px;
+        font-size: 18px;
+    }
+    
+    .contact>div{
+        margin-right: 2%;
+    }
+
+    .DataPage{
+        width: 80%;
+        height: 87%;
+        border-radius: 10px;
+        top: 13%;
+        left: 1%;
+    }
+    
+    .DataPageContent{
+        width: 80%;
+        height: 85%;
+        left: 2%;
+        border-radius: 10px;
+        padding: 2%;
+        box-shadow: -1px 1px 8px #707070;
+    }
+    
+    .DataPageGuide{
+        width: 20%;
+        font-size: 20px;
+        padding: 4px;
+        top: 0;
+        bottom: 8%;
+    }
+    
+    .DataPageTitle{
+        font-size: 45px;
+    }
+
+    .GuideTitle{
+        margin-bottom: 20px;
+        padding: 2px;
+        border: 2px solid #182825;
+    }
+
+    .GuideTitle:hover{
+        box-shadow: -1.3px 1.3px 4px #707070;
+    }
+    
+    /* .GuideTitleClick */
+
+    .DataPageTextContainer{
+        width: 80%;
+        height: 80%;
+        font-size: 20px;
+        line-height: 50px;
+        letter-spacing: 4px;
+    }
+    
+    /* .DataPageText */
+
+    .DataPageX{
+        top: 1%;
+        right: 0.5%; 
+    }
+    /* .DataPageX:hover */
+
+    .DataPageContent::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    .DataPageContent::-webkit-scrollbar-thumb {
+        width: 10px;
+    }
+
+    .DataPageGuide::-webkit-scrollbar {
+        width: 3px;
+    }
+    
+    .DataPageGuide::-webkit-scrollbar-thumb {
+        width: 3px;
+    }
+
+    span{
+        width: 50%;
+        height: 10%;
+    }
+    
+    /* .DataPageText p */
+    
+    /* .DataPageText p span */
+    
+    /* .DataPageText>p img */
+    
+    .OPEN p{
+        font-size: 18px;
+        padding-left: 26px;
+    }
+    
+    /* .StudentAssociationResources */
+    
+    /* .InstructionsForNewStudents */
+    
+    /* .AccommodationInformation */
+    
+    /* .CourseDescription */
+    
+    /* .OnlineResources */
+    
+    /* .FAQ */
+}
