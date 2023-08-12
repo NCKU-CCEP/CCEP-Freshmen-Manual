@@ -5,15 +5,15 @@
     /* .MainPage */
 
     .PageTop{
-        font-size: 55px;
+        font-size: 75px;
         letter-spacing: 7px;
         text-shadow: -1.5px 1.5px #707070;
-        padding: 5px;
+        padding: 25px;
     }
 
     .guide{
-        height: 200px;
-        width: 200px;
+        height: 80%;
+        width: 30%;
         margin: 1%;
         font-size: 25px;
         line-height: 60px;
@@ -25,16 +25,28 @@
         box-shadow: -1px 3px 10px #707070;
     }
     
-    /* .guideContainer */
+    .guideContainerOuter
+    {
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+
+    .guideContainer
+    {
+        height: 80%;
+    }
 
     .ContactContainer{
         line-height: 50px;
-        font-size: 20px;
+        font-size: 30px;
     }
     
     .contact{
         bottom: 10px;
-        font-size: 18px;
+        font-size: 20px;
     }
     
     .contact>div{
