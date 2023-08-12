@@ -88,15 +88,15 @@
 }
 
 .Group>.DataPageText>p>span img{
-    width: 80px;
+    width: 100px;
     margin: 0 15px -5px 120px;
 }
 
 @media (max-width: 767px)
 {
     .Group>.DataPageText>p>span img{
-        width: 80px;
-        height: 80px;
-        margin: 0 15px -5px;
+        width: 100px;
+        height: 100px;
+        margin: 0 50px -5px;
     }
 }

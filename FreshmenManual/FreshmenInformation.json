@@ -85,7 +85,7 @@
             "💡 新生群組<br>",
                 "還沒加到群組的新生們，務必手刀加入！<br>",
                 ["../assest/img/LineQrCode.jpg", "img"],
-                ["<i class='fab fa-facebook-square' style='color: #1877f6; font-size: 90px;'></i><br>","www.facebook.com/groups/6358210070939445/", "url"],
+                "<br>",
 
             ["新生入學須知", "https://reg-acad.ncku.edu.tw/var/file/41/1041/img/588/112freshman_not.pdf", "url"],
             "有清楚的應做事項指引。"

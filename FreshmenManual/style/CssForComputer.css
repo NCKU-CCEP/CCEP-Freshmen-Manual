@@ -141,4 +141,8 @@
     /* .OnlineResources */
     
     /* .FAQ */
+
+    .OPENGuide{
+        display: none;
+    }
 }
