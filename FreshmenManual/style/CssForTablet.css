@@ -1,22 +1,19 @@
 @media (min-width: 768px) and (max-width: 1023px)
 {
-    body
-    {
-        border: 1px solid red;
-    }
+    /* body */
 
     /* .MainPage */
 
     .PageTop{
-        font-size: 75px;
+        font-size: 55px;
         letter-spacing: 7px;
         text-shadow: -1.5px 1.5px #707070;
         padding: 5px;
     }
 
     .guide{
-        height: 80%;
-        width: 30%;
+        height: 200px;
+        width: 200px;
         margin: 1%;
         font-size: 25px;
         line-height: 60px;
@@ -28,22 +25,10 @@
         box-shadow: -1px 3px 10px #707070;
     }
     
-    .guideContainerOuter
-    {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        height:80%;
-    }
-
-    .guideContainer
-    {
-        height: 30%;
-    }
+    /* .guideContainer */
 
     .ContactContainer{
-        line-height: 80px;
+        line-height: 50px;
         font-size: 20px;
     }
     
@@ -58,15 +43,15 @@
 
     .DataPage{
         width: 80%;
-        height: 60%;
+        height: 87%;
         border-radius: 10px;
-        top: 30%;
-        left: 5%;
+        top: 13%;
+        left: 1%;
     }
     
     .DataPageContent{
         width: 80%;
-        height: 60%;
+        height: 85%;
         left: 2%;
         border-radius: 10px;
         padding: 2%;

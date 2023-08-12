@@ -5,7 +5,7 @@
     /* .MainPage */
 
     .PageTop{
-        font-size: 75px;
+        font-size: 35px;
         letter-spacing: 7px;
         text-shadow: -1.5px 1.5px #707070;
         padding: 5px;
@@ -15,7 +15,7 @@
         height: 80%;
         width: 30%;
         margin: 1%;
-        font-size: 25px;
+        font-size: 23px;
         line-height: 60px;
         box-shadow: -1px 1px 2px #707070;
     }
@@ -40,13 +40,13 @@
     }
 
     .ContactContainer{
-        line-height: 80px;
+        line-height: 50px;
         font-size: 20px;
     }
     
     .contact{
         bottom: 10px;
-        font-size: 18px;
+        font-size: 20px;
     }
     
     .contact>div{
